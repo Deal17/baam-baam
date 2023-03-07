@@ -13,6 +13,51 @@ body {
     background-color: rgba(146, 237, 146, 0.866);
 }
 
+
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.7fr 2fr; 
+    grid-template-rows: auto 5fr auto; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+            "logo header"
+            "aside main"
+            "footer footer";
+}
+
+   .header  {
+    padding: auto;
+    grid-area: header;
+    justify-content: space-around;
+    align-items: center;
+   }
+   .aside  {
+    padding: 0px auto;
+    height: 10px;
+    grid-area: aside;
+
+}
+   .main {
+    padding: auto;
+       grid-area: main;
+   }
+   .main {
+    padding: auto;
+       grid-area: main;
+   }
+   .footer {
+    padding: auto;
+       grid-area: footer;
+   }
+
+.sect2 {
+    margin-top: 40px;
+    width: 300px;
+    height: auto;
+}
+
 h1,h2,h4,h5 {
     font-family: 'Titillium Web', sans-serif;
     color: rgb(186, 108, 5);
@@ -111,6 +156,17 @@ nav .menu .item:hover a{
     margin-top: 50px;
     font-size: 2rem;
 }
+.sect4 {
+    text-align: center;
+    margin-top: 40px;
+    padding:  35px;
+    font-size: 1rem;
+
+}
+
+h4,h5 {
+    font-size: 1rem;
+}
 
 .slider-frame {
     width: 500px;
@@ -164,9 +220,10 @@ nav .menu .item:hover a{
         margin: 0 60px;
      }
 
+
 footer {
     background-color: #25375e;
-    height: 100px;
+    height: 100px auto;
 }
 footer h4{
    padding-bottom: 0;
@@ -175,8 +232,7 @@ footer a h5{
     padding-top: 0;
 }
 
-
-
+    
 
 
 
