@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo-left {
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: $color-bg;
+}
+.list_sub_a{
+    list-style: none;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.sect2 {
+    margin-top: 100px;
+    width: 300px;
+    height: auto;
+}
+
+h1,h2,h4,h5 {
+    font-family: 'Titillium Web', sans-serif;
+    color: $color_titulos;
+    text-align: center;
+    padding: 25px;
+}
+
+h2 {
+    margin-top: 30px auto;
+}
+

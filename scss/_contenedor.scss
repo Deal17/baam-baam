@@ -1,0 +1,37 @@
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.7fr 2fr; 
+    grid-template-rows: auto 5fr auto; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+            "logo header"
+            "aside main"
+            "footer footer";
+}
+
+   .header  {
+    padding: auto;
+    grid-area: header;
+    justify-content: space-around;
+    align-items: center;
+   }
+   .aside  {
+    padding: 0px auto;
+    height: 10px;
+    grid-area: aside;
+
+}
+   .main {
+    padding: auto;
+       grid-area: main;
+   }
+   .main {
+    padding: auto;
+       grid-area: main;
+   }
+   .footer {
+    padding: auto;
+       grid-area: footer;
+   }
