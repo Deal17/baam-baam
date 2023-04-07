@@ -1,20 +1,119 @@
 .sect1 h1 {
     text-align: center;
     margin-top: 50px;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
 }
+
+.sect1 {
+    height: 65vh !important;
+    background: url(../assets/byn-perzonaliza_optimized.jpg )  no-repeat center;
+    background-size: cover;
+}
+
+.sect3 {
+    text-align: center
+
+}
+.sect3 .images-sect3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.sect3 .images-sect3 .producto_img { 
+    width: 255px;
+    height: 200px;
+    margin-top: 40px;
+    margin-left: 15px;
+    border-radius: 50%;
+}
+.sect3 .images-sect3 .producto_img:hover{
+    transform: scale(1.1,1.2);
+   }
+
 .sect4 {
     text-align: center;
     margin-top: 40px;
-    padding:  35px;
+    padding:  60px;
     font-size: 1rem;
-
+    background-color: #25375e;
+    color: #ffe4c4;
+}
+.sect2 {
+   
+    text-align: center;
+    margin-top: 40px;
+}
+h1 {
+    color: black;
+    background-color: transparent;
+    font-weight: bold;
+    -webkit-text-stroke: #fff;
+    text-shadow: 1px  0px 0px rgb(255, 255, 255),
+             0px  1px 0px white,
+            -1px  0px 0px white,
+             0px -1px 0px white,
 }
 
 h4,h5 {
     font-size: 1rem;
 }
 
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.item{
+    border-radius: 10px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+    width: 80%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button{
+    border: none;
+    background: none;
+    background-color: #000;
+    border-radius: 12px;
+    color: #ffd700;
+    padding: 15px 10px;
+    cursor: pointer;
+}
 .slider-frame {
     width: 500px;
     height: auto;
@@ -26,6 +125,7 @@ h4,h5 {
     display: flex;
     padding: 0;
     width: 400%;
+   
     
     animation: slide 15s infinite alternate ease-in-out;
 }
@@ -33,10 +133,12 @@ h4,h5 {
 .slider-frame li {
     width: 100%;
     list-style: none;
+    border-radius: 2%;
 }
 
 .slider-frame .img-slidebar {
     width: 100%;
+    border-radius: 2%;
 }
 
 @keyframes slide {
@@ -53,11 +155,7 @@ h4,h5 {
     100% {margin-left: -300%;}
     }
 
-    .sect3 img {
-       width: 300px;
-       height: 300px;
-       justify-content: center;
-    }
+    
     .images-sect3{
         width: max-content;
         margin: 0 auto;
@@ -186,3 +284,30 @@ h4,h5 {
             transform: translateY(0);
         }
     }
+    @media screen and (max-width:800px){
+        .container-items{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media screen and (max-width:500px){
+        .container-items{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    @media screen and (max-width:700px){
+        .nombre-de-empresa{
+           font-size: 0;
+        }
+        nav{
+            display: block;
+              height: 436px;
+        }
+        .menu{
+            display: grid;
+        }
+        .logo{
+            width: 80px;
+        height: 80px;   
+        }
+    }
+    

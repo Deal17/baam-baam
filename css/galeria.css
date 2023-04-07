@@ -133,3 +133,19 @@ nav .menu .item:hover a{
 .img-gale:hover {
     border: solid white 2px;
 }
+@media screen and (max-width:877px){
+    .nombre-de-empresa{
+       font-size: 0;
+    }
+    nav{
+        display: block;
+          height: 436px;
+    }
+    .menu{
+        display: grid;
+    }
+    .logo{
+        width: 80px;
+    height: 80px;   
+    }
+}

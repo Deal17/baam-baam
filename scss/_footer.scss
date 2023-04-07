@@ -1,7 +1,6 @@
 .pie-pagina{
     height: auto;
     background-color: #25375e;
-    
 }
 .pie-pagina .grupo-1{
     width: 100%;
@@ -18,15 +17,21 @@
     justify-content: space-between;
 }
 .pie-pagina .grupo-1 .box figure img{
-    width: 140px;
-    height: 140px;
-    margin-top: 15px;
+    width: 160px;
+    height: 142px;
+    margin-top: 30px;
     padding: 10px;
     margin-left: 25px;
     border-radius: 50%;
 }
+
+.pie-pagina .grupo-1 .box figure img:hover {
+        transform: scale(1.1,1.2);
+       }
+
+    
 .pie-pagina .grupo-1 .box h2{
-    color: #fff;
+    color: #ffd700;
     margin-bottom: 5px;
     font-size: 20px;
 }
@@ -34,6 +39,11 @@
     color: #efefef;
     font-size: 12px;
     margin-bottom: 5px;
+    text-align: center;
+}
+.pie-pagina .grupo-1 .red-social {
+    display: flex;
+    justify-content: center;
 }
 .pie-pagina .grupo-1 .red-social a{
     display: inline-block;
@@ -46,6 +56,7 @@
     background-color: #25375e;
     text-align: center;
     transition: all 300ms ease;
+
 }
 .pie-pagina .grupo-1 .red-social a:hover{
     color: rgb(240, 237, 63);
@@ -65,5 +76,12 @@
         grid-template-columns: repeat(1, 1fr);
         grid-gap:30px;
         padding: 35px 0px;
+    }
+    .pie-pagina .grupo-1 .box figure{
+        justify-content: center;
+    }
+    .pie-pagina .grupo-1 .box figure img{
+        justify-content: center;
+        margin: 0px;
     }
 }

@@ -208,9 +208,6 @@ textarea{
 }
 
 @media screen and (max-width: 880px){
-    body{
-        background: blue;
-    }
 	.contact-box{
 		grid-template-columns: 1fr;
 	}
@@ -218,10 +215,13 @@ textarea{
 		height: 200px;
     } 
 }
-@media screen and (max-width: 580px){
-    body{
-        background: greenyellow;
+@media screen and (max-width: 880px){
+    .contact-box{
+        max-width: 370px;
     }
+}
+@media screen and (max-width: 580px){
+
 	.contact-box{
 		grid-template-columns: 1fr;
 	}
@@ -230,13 +230,26 @@ textarea{
     } 
 }
 @media screen and (max-width: 600px){
-    body{
-        background: rgb(255, 94, 0);
-    }
+
 	.contact-box{
 		grid-template-columns: 1fr;
 	}
 	.left{
 		height: 200px;
     } 
+}@media screen and (max-width:880px){
+    .nombre-de-empresa{
+       font-size: 0;
+    }
+    nav{
+        display: block;
+          height: 436px;
+    }
+    .menu{
+        display: grid;
+    }
+    .logo{
+        width: 80px;
+    height: 80px;   
+    }
 }
